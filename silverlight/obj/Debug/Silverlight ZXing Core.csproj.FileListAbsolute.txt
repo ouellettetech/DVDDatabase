@@ -1,0 +1,8 @@
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\silverlightzxing\silverlightzxing_3bd7fb2d5eb2\silverlight\Bin\Debug\Silverlight_ZXing_Core.dll
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\silverlightzxing\silverlightzxing_3bd7fb2d5eb2\silverlight\Bin\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\silverlightzxing\silverlightzxing_3bd7fb2d5eb2\silverlight\obj\Debug\Silverlight_ZXing_Core.dll
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\silverlightzxing\silverlightzxing_3bd7fb2d5eb2\silverlight\obj\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\DVDDatabase\silverlight\Bin\Debug\Silverlight_ZXing_Core.dll
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\DVDDatabase\silverlight\Bin\Debug\Silverlight_ZXing_Core.pdb
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\DVDDatabase\silverlight\obj\Debug\Silverlight_ZXing_Core.dll
+C:\Users\bradou\Documents\Visual Studio 2010\Projects\DVDDatabase\silverlight\obj\Debug\Silverlight_ZXing_Core.pdb

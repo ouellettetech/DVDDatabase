@@ -1,0 +1,75 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="DVDDatabase.NewItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="DVD Database" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="New Item" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle2Style}"/>
+        </StackPanel>
+        <ListBox x:Name="AddItemDetails" Grid.Row="1" Margin="12,17,0,28" Width="Auto">
+            <Button Content="AddPhoto" Height="72" HorizontalAlignment="Left" Margin="10,10,0,0" Name="addphoto" VerticalAlignment="Top" Width="180" Click="addphoto_Click"/>
+            <Image Name="addDVDImage" Height="72" Width="72" />
+            <TextBlock x:Name="TXTNewItemTitle" Text="Title" Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBox
+                    x:Name="newItemTitle"                    
+                Width="457"
+                    FontFamily="{StaticResource PhoneFontFamilyLight}"/>
+            
+            <TextBlock x:Name="TXTNewItemGenre" Text="Genre" Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBox
+                    x:Name="NewItemGenre"                    
+                Grid.Column="0"
+                Width="457"
+                    FontFamily="{StaticResource PhoneFontFamilyLight}"/>
+
+            <TextBlock x:Name="TXTNewItemDescription" Text="Description" Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBox
+                    x:Name="NewItemDescription"                    
+                    Width="457"
+                    FontFamily="{StaticResource PhoneFontFamilyLight}"/>
+            <TextBlock x:Name="TXTNewItemISBN" Text="ISBN/ASIN" Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBox
+                    x:Name="NewItemISBN"                    
+                    Width="457"
+                    FontFamily="{StaticResource PhoneFontFamilyLight}"/>
+
+            <TextBlock x:Name="TXTNewItemFormat" Text="Format" Style="{StaticResource PhoneTextNormalStyle}" />
+            <TextBox
+
+                x:Name="NewItemFormat"                    
+                    Width="457"
+                    FontFamily="{StaticResource PhoneFontFamilyLight}"/>
+            <TextBlock x:Name="ErrorText" Text="" Style="{StaticResource PhoneTextNormalStyle}" />
+
+        </ListBox>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+    </Grid>
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.save.rest.png" Text="New" Click="SaveNewItem"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.cancel.rest.png" Text="Search" Click="CancelNewItem"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>
